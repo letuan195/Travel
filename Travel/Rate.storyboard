@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Rate View Controller-->
+        <scene sceneID="1vM-OY-Av6">
+            <objects>
+                <viewController storyboardIdentifier="rateViewController" id="AJp-o3-QfU" customClass="RateViewController" customModule="Hanoi_Audio_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v3T-qr-dO1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Esa-A9-BSh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M1h-G7-cFT">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vh5-PB-ntq" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="70" width="280" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love Hanoi Audio Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-Gb-krU">
+                                        <rect key="frame" x="0.0" y="40" width="280" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="9Il-Sq-5iq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Hanoi Audio Guide 5-stars to help motivate our developers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22j-0s-1ja">
+                                        <rect key="frame" x="0.0" y="88" width="280" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="NSJ-cZ-Umc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kML-CO-s3c">
+                                        <rect key="frame" x="20" y="148" width="240" height="44"/>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="FZ2-tl-MBc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <state key="normal" title="Rate it now">
+                                            <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickRate:" destination="AJp-o3-QfU" eventType="touchUpInside" id="GgA-aB-LDP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3m6-Bd-6ux">
+                                        <rect key="frame" x="20" y="204" width="240" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="1lf-E4-ULn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <state key="normal" title="Not now">
+                                            <color key="titleColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickNotRate:" destination="AJp-o3-QfU" eventType="touchUpInside" id="Mou-jl-Qj6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kML-CO-s3c" firstAttribute="top" secondItem="22j-0s-1ja" secondAttribute="bottom" constant="12" id="1g0-Mw-9PY"/>
+                                    <constraint firstItem="6AQ-Gb-krU" firstAttribute="width" secondItem="Vh5-PB-ntq" secondAttribute="width" id="1zX-Jg-Z86"/>
+                                    <constraint firstItem="6AQ-Gb-krU" firstAttribute="top" secondItem="Vh5-PB-ntq" secondAttribute="top" constant="40" id="6W3-Mp-4hr"/>
+                                    <constraint firstItem="22j-0s-1ja" firstAttribute="top" secondItem="6AQ-Gb-krU" secondAttribute="bottom" id="Bos-zq-0GX"/>
+                                    <constraint firstItem="kML-CO-s3c" firstAttribute="centerX" secondItem="Vh5-PB-ntq" secondAttribute="centerX" id="CMO-s1-1jS"/>
+                                    <constraint firstItem="3m6-Bd-6ux" firstAttribute="top" secondItem="kML-CO-s3c" secondAttribute="bottom" constant="12" id="IVc-Fb-m42"/>
+                                    <constraint firstAttribute="trailing" secondItem="3m6-Bd-6ux" secondAttribute="trailing" constant="20" id="Nkb-U6-UiC"/>
+                                    <constraint firstItem="22j-0s-1ja" firstAttribute="centerX" secondItem="Vh5-PB-ntq" secondAttribute="centerX" id="PB0-X1-FF0"/>
+                                    <constraint firstItem="22j-0s-1ja" firstAttribute="width" secondItem="Vh5-PB-ntq" secondAttribute="width" id="Re8-Au-ufO"/>
+                                    <constraint firstAttribute="trailing" secondItem="kML-CO-s3c" secondAttribute="trailing" constant="20" id="Ufn-sP-OA2"/>
+                                    <constraint firstItem="3m6-Bd-6ux" firstAttribute="centerX" secondItem="Vh5-PB-ntq" secondAttribute="centerX" id="VGc-ys-Ho3"/>
+                                    <constraint firstItem="3m6-Bd-6ux" firstAttribute="leading" secondItem="Vh5-PB-ntq" secondAttribute="leading" constant="20" id="gMH-Tx-d2t"/>
+                                    <constraint firstItem="kML-CO-s3c" firstAttribute="leading" secondItem="Vh5-PB-ntq" secondAttribute="leading" constant="20" id="h9e-SR-nlA"/>
+                                    <constraint firstItem="6AQ-Gb-krU" firstAttribute="centerX" secondItem="Vh5-PB-ntq" secondAttribute="centerX" id="slP-hG-Y5s"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2o2-zq-ryI" userLabel="ContentImageView">
+                                <rect key="frame" x="100" y="30" width="80" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lohala" translatesAutoresizingMaskIntoConstraints="NO" id="7Fi-ic-85i">
+                                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6GA-GT-lb9"/>
+                                            <constraint firstAttribute="width" constant="60" id="JyI-C8-ro1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7Fi-ic-85i" firstAttribute="centerY" secondItem="2o2-zq-ryI" secondAttribute="centerY" id="4Dq-e0-iOx"/>
+                                    <constraint firstItem="7Fi-ic-85i" firstAttribute="centerX" secondItem="2o2-zq-ryI" secondAttribute="centerX" id="Fgd-Rg-zdc"/>
+                                    <constraint firstAttribute="width" constant="80" id="Pew-Q2-zeI"/>
+                                    <constraint firstAttribute="height" constant="80" id="bZK-rW-jfv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vh5-PB-ntq" firstAttribute="width" secondItem="M1h-G7-cFT" secondAttribute="width" id="794-wb-tB7"/>
+                            <constraint firstItem="Vh5-PB-ntq" firstAttribute="top" secondItem="v3T-qr-dO1" secondAttribute="bottom" constant="50" id="BMl-7e-fu0"/>
+                            <constraint firstItem="Esa-A9-BSh" firstAttribute="top" secondItem="Vh5-PB-ntq" secondAttribute="bottom" id="KVE-fV-cah"/>
+                            <constraint firstItem="2o2-zq-ryI" firstAttribute="centerY" secondItem="Vh5-PB-ntq" secondAttribute="top" id="QdZ-wz-fTL"/>
+                            <constraint firstItem="2o2-zq-ryI" firstAttribute="centerX" secondItem="M1h-G7-cFT" secondAttribute="centerX" id="Vg5-HM-9yT"/>
+                            <constraint firstItem="Vh5-PB-ntq" firstAttribute="centerX" secondItem="M1h-G7-cFT" secondAttribute="centerX" id="gjg-pS-mac"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="350"/>
+                    <connections>
+                        <outlet property="btNot" destination="3m6-Bd-6ux" id="tUU-fc-6CN"/>
+                        <outlet property="btRate" destination="kML-CO-s3c" id="odl-nh-U0w"/>
+                        <outlet property="contentImageView" destination="2o2-zq-ryI" id="c8U-QF-iES"/>
+                        <outlet property="contentView" destination="Vh5-PB-ntq" id="fPh-P0-qYW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZG7-lH-zZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="197"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lohala" width="1000" height="1000"/>
+    </resources>
+</document>

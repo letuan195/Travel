@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Buy Product View Controller-->
+        <scene sceneID="ukl-Lw-mFv">
+            <objects>
+                <viewController storyboardIdentifier="BuyProductViewController" id="lcv-4F-3Cr" customClass="BuyProductViewController" customModule="Hanoi_Audio_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0de-Aw-dmu"/>
+                        <viewControllerLayoutGuide type="bottom" id="fWd-5L-FHI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XUc-YU-Xk5">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-VQ-AzW" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy Product" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBO-fS-Jhv">
+                                        <rect key="frame" x="0.0" y="-1" width="280" height="65"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80392156862745101" green="0.28235294117647058" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="JPg-rp-u33"/>
+                                    <constraint firstItem="JBO-fS-Jhv" firstAttribute="width" secondItem="SQe-VQ-AzW" secondAttribute="width" id="JUp-FX-UOM"/>
+                                    <constraint firstItem="JBO-fS-Jhv" firstAttribute="centerX" secondItem="SQe-VQ-AzW" secondAttribute="centerX" id="Jdr-wb-Pl6"/>
+                                    <constraint firstItem="JBO-fS-Jhv" firstAttribute="centerY" secondItem="SQe-VQ-AzW" secondAttribute="centerY" id="Lfe-J6-3eA"/>
+                                    <constraint firstItem="JBO-fS-Jhv" firstAttribute="height" secondItem="SQe-VQ-AzW" secondAttribute="height" id="qD3-Ep-Tym"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please buy the app with $1.99 to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-NJ-yHW">
+                                <rect key="frame" x="0.0" y="76" width="280" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="gD7-3d-DQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2R-gn-g43">
+                                <rect key="frame" x="56" y="154" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="dLJ-e0-VCD"/>
+                                    <constraint firstAttribute="height" constant="50" id="je3-1k-6rz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="r6d-jO-j8i">
+                                <rect key="frame" x="144" y="154" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kli-zr-6Sa"/>
+                                    <constraint firstAttribute="height" constant="50" id="oca-wZ-XrE"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80392156862745101" green="0.28235294117647058" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SQe-VQ-AzW" firstAttribute="centerX" secondItem="XUc-YU-Xk5" secondAttribute="centerX" id="JIo-Iu-lpj"/>
+                            <constraint firstItem="f2R-gn-g43" firstAttribute="leading" secondItem="XUc-YU-Xk5" secondAttribute="leadingMargin" constant="40" id="KcV-Z5-ZQI"/>
+                            <constraint firstItem="c1f-NJ-yHW" firstAttribute="centerX" secondItem="XUc-YU-Xk5" secondAttribute="centerX" id="Tty-8u-HDZ"/>
+                            <constraint firstItem="fWd-5L-FHI" firstAttribute="top" secondItem="f2R-gn-g43" secondAttribute="bottom" constant="16" id="aZI-zJ-dtv"/>
+                            <constraint firstItem="c1f-NJ-yHW" firstAttribute="width" secondItem="XUc-YU-Xk5" secondAttribute="width" id="apd-6b-3oC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r6d-jO-j8i" secondAttribute="trailing" constant="40" id="bWX-ey-G9i"/>
+                            <constraint firstItem="c1f-NJ-yHW" firstAttribute="top" secondItem="SQe-VQ-AzW" secondAttribute="bottom" constant="12" id="coa-OY-bSN"/>
+                            <constraint firstItem="SQe-VQ-AzW" firstAttribute="width" secondItem="XUc-YU-Xk5" secondAttribute="width" id="j9u-d8-xf7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="f2R-gn-g43" secondAttribute="bottom" constant="16" id="qmf-OZ-mle"/>
+                            <constraint firstItem="SQe-VQ-AzW" firstAttribute="top" secondItem="XUc-YU-Xk5" secondAttribute="topMargin" id="ykK-Kw-iWn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="r6d-jO-j8i" secondAttribute="bottom" constant="16" id="yxA-Su-4Ba"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aZI-zJ-dtv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="220"/>
+                    <connections>
+                        <outlet property="btnCancel" destination="f2R-gn-g43" id="LEH-VQ-0pG"/>
+                        <outlet property="btnContinue" destination="r6d-jO-j8i" id="abL-Ac-1cF"/>
+                        <outlet property="headerView" destination="SQe-VQ-AzW" id="PLx-qY-5RQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFi-eR-7VY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="68"/>
+        </scene>
+    </scenes>
+</document>

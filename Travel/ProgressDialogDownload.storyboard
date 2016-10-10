@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Progress Dialog View Controller-->
+        <scene sceneID="LHj-65-b8T">
+            <objects>
+                <viewController storyboardIdentifier="progressDialogViewController" id="1qA-Uh-K4E" customClass="ProgressDialogViewController" customModule="Hanoi_Audio_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y2c-gS-TAx"/>
+                        <viewControllerLayoutGuide type="bottom" id="R9b-zg-lRy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xIY-5W-iV5">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RgJ-Qd-S8W">
+                                <rect key="frame" x="36" y="92" width="208" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-j2-KkM">
+                                <rect key="frame" x="0.0" y="44" width="280" height="24"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EQf-j2-KkM" firstAttribute="width" secondItem="xIY-5W-iV5" secondAttribute="width" id="TIW-BF-4FA"/>
+                            <constraint firstItem="EQf-j2-KkM" firstAttribute="centerX" secondItem="xIY-5W-iV5" secondAttribute="centerX" id="Zys-lX-9wU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RgJ-Qd-S8W" secondAttribute="trailing" constant="20" id="hMA-1p-XxJ"/>
+                            <constraint firstItem="EQf-j2-KkM" firstAttribute="top" secondItem="Y2c-gS-TAx" secondAttribute="bottom" constant="24" id="kMc-bU-9xd"/>
+                            <constraint firstItem="RgJ-Qd-S8W" firstAttribute="top" secondItem="EQf-j2-KkM" secondAttribute="bottom" constant="24" id="nbv-KN-kpO"/>
+                            <constraint firstItem="RgJ-Qd-S8W" firstAttribute="leading" secondItem="xIY-5W-iV5" secondAttribute="leadingMargin" constant="20" id="txK-sg-hSD"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="568"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="120"/>
+                    <connections>
+                        <outlet property="label" destination="EQf-j2-KkM" id="DVf-xS-oJh"/>
+                        <outlet property="progressDownload" destination="RgJ-Qd-S8W" id="YEG-rc-Dzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZ8-oy-rCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="265"/>
+        </scene>
+    </scenes>
+</document>

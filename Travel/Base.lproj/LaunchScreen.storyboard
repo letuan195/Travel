@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="2RR-GP-10L">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="tintColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.76862745098039209" blue="0.95686274509803915" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.20000000000000001" green="0.76862745098039209" blue="0.95686274509803915" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2RR-GP-10L" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JDU-IR-1g1"/>
+                            <constraint firstItem="2RR-GP-10L" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="OLs-2Y-54A"/>
+                            <constraint firstAttribute="bottom" secondItem="2RR-GP-10L" secondAttribute="bottom" id="aI8-Yn-2wU"/>
+                            <constraint firstAttribute="trailing" secondItem="2RR-GP-10L" secondAttribute="trailing" id="haH-44-Zjd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash" width="320" height="568"/>
+    </resources>
+</document>
